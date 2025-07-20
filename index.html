@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Fidelity - Petani Cerdas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Styling dasar untuk meniru wireframe */
+        .wireframe-box {
+            border: 2px dashed #9ca3af; /* Abu-abu */
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #f9fafb; /* Abu-abu sangat terang */
+        }
+        .wireframe-button {
+            border: 2px solid #6b7280; /* Abu-abu gelap */
+            padding: 0.5rem 1rem;
+            background-color: #e5e7eb; /* Abu-abu terang */
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+        }
+        .wireframe-input {
+            border: 1px solid #9ca3af;
+            padding: 0.5rem;
+            width: 100%;
+            background-color: white;
+        }
+        .wireframe-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .wireframe-table th, .wireframe-table td {
+            border: 1px solid #d1d5db; /* Abu-abu lebih terang */
+            padding: 0.5rem;
+            text-align: left;
+        }
+        .wireframe-table th {
+            background-color: #f3f4f6;
+        }
+        .placeholder-icon {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #9ca3af;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #d1d5db;
+        }
+        .placeholder-card-icon {
+            width: 48px;
+            height: 48px;
+            border: 2px solid #9ca3af;
+            background-color: #d1d5db;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 p-4 font-sans">
+
+    <!-- Tampilan Login -->
+    <div class="wireframe-box max-w-md mx-auto text-center">
+        <h1 class="text-2xl font-bold mb-4">Halaman Login</h1>
+        <div class="placeholder-icon mx-auto mb-4" style="width: 60px; height: 60px; border-radius: 8px;"></div>
+        <p class="mb-4">Petani Cerdas</p>
+        <div class="space-y-4">
+            <input type="text" placeholder="Nama Pengguna" class="wireframe-input">
+            <input type="password" placeholder="Kata Sandi" class="wireframe-input">
+            <div class="wireframe-button w-full">LOGIN</div>
+        </div>
+    </div>
+
+    <hr class="my-8 border-t-2 border-gray-400">
+
+    <!-- Tampilan Aplikasi Utama -->
+    <div class="flex space-x-4">
+        <!-- Sidebar -->
+        <aside class="w-1/4 wireframe-box">
+            <div class="flex items-center mb-6">
+                <div class="placeholder-icon mr-2"></div>
+                <h2 class="text-xl font-bold">Petani Cerdas</h2>
+            </div>
+            <nav class="space-y-2">
+                <a href="#" class="block p-2 border border-gray-400 bg-gray-300">Dashboard</a>
+                <a href="#" class="block p-2 border border-gray-400">Petani</a>
+                <a href="#" class="block p-2 border border-gray-400">Lahan</a>
+                <a href="#" class="block p-2 border border-gray-400">Alat</a>
+                <a href="#" class="block p-2 border border-gray-400">Tanaman</a>
+                <a href="#" class="block p-2 border border-gray-400">Penyiraman</a>
+            </nav>
+            <div class="mt-auto pt-4 border-t-2 border-dashed border-gray-400">
+                 <div class="wireframe-button w-full">Keluar</div>
+            </div>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="w-3/4">
+            <!-- Halaman Dashboard -->
+            <div class="wireframe-box">
+                <h1 class="text-3xl font-bold mb-4">Dashboard</h1>
+                <!-- Kartu Ringkasan -->
+                <div class="grid grid-cols-4 gap-4 mb-4">
+                    <div class="wireframe-box flex items-center">
+                        <div class="placeholder-card-icon mr-4"></div>
+                        <div>
+                            <p>Total Petani</p>
+                            <p class="text-2xl font-bold">[Angka]</p>
+                        </div>
+                    </div>
+                    <div class="wireframe-box flex items-center">
+                        <div class="placeholder-card-icon mr-4"></div>
+                        <div>
+                            <p>Total Lahan</p>
+                            <p class="text-2xl font-bold">[Angka]</p>
+                        </div>
+                    </div>
+                    <div class="wireframe-box flex items-center">
+                        <div class="placeholder-card-icon mr-4"></div>
+                        <div>
+                            <p>Total Alat</p>
+                            <p class="text-2xl font-bold">[Angka]</p>
+                        </div>
+                    </div>
+                     <div class="wireframe-box flex items-center">
+                        <div class="placeholder-card-icon mr-4"></div>
+                        <div>
+                            <p>Total Penyiraman</p>
+                            <p class="text-2xl font-bold">[Angka]</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabel Dashboard -->
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Daftar Tanaman & Status</h2>
+                    <table class="wireframe-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Jenis Jagung</th>
+                                <th>Lokasi</th>
+                                <th>Status</th>
+                                <th>Rekomendasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>[Data]</td>
+                                <td>[Data]</td>
+                                <td>[Data]</td>
+                                <td>[Data]</td>
+                                <td>[Data]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Halaman Manajemen Petani -->
+            <div class="wireframe-box mt-4">
+                <h1 class="text-3xl font-bold mb-4">Manajemen Petani</h1>
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Form Tambah/Edit Petani</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Nama Petani" class="wireframe-input">
+                        <input type="text" placeholder="No. HP" class="wireframe-input">
+                        <input type="text" placeholder="Alamat" class="wireframe-input">
+                    </div>
+                    <div class="flex justify-end space-x-2 mt-4"><div class="wireframe-button">Batal</div><div class="wireframe-button">Simpan</div></div>
+                </div>
+                <div class="wireframe-box">
+                    <div class="flex justify-between items-center mb-2"><h2 class="text-xl font-bold">Daftar Petani</h2><div class="wireframe-button">Download CSV</div></div>
+                    <table class="wireframe-table">
+                        <thead><tr><th>ID</th><th>Nama</th><th>No. HP</th><th>Aksi</th></tr></thead>
+                        <tbody><tr><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Edit] [Hapus]</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Halaman Manajemen Lahan -->
+            <div class="wireframe-box mt-4">
+                <h1 class="text-3xl font-bold mb-4">Manajemen Lahan</h1>
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Form Tambah/Edit Lahan</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Lokasi Lahan" class="wireframe-input">
+                        <input type="text" placeholder="Luas (m²)" class="wireframe-input">
+                        <input type="text" placeholder="Petani Penanggung Jawab" class="wireframe-input">
+                    </div>
+                    <div class="flex justify-end space-x-2 mt-4"><div class="wireframe-button">Batal</div><div class="wireframe-button">Simpan</div></div>
+                </div>
+                <div class="wireframe-box">
+                    <div class="flex justify-between items-center mb-2"><h2 class="text-xl font-bold">Daftar Lahan</h2><div class="wireframe-button">Download CSV</div></div>
+                    <table class="wireframe-table">
+                        <thead><tr><th>ID</th><th>Lokasi</th><th>Luas</th><th>Petani</th><th>Aksi</th></tr></thead>
+                        <tbody><tr><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Edit] [Hapus]</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Halaman Manajemen Alat -->
+            <div class="wireframe-box mt-4">
+                <h1 class="text-3xl font-bold mb-4">Manajemen Alat</h1>
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Form Tambah/Edit Alat</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Nama Alat" class="wireframe-input">
+                        <input type="text" placeholder="Tipe Sensor" class="wireframe-input">
+                        <input type="text" placeholder="Lokasi Terpasang (Lahan)" class="wireframe-input">
+                    </div>
+                    <div class="flex justify-end space-x-2 mt-4"><div class="wireframe-button">Batal</div><div class="wireframe-button">Simpan</div></div>
+                </div>
+                <div class="wireframe-box">
+                    <div class="flex justify-between items-center mb-2"><h2 class="text-xl font-bold">Daftar Alat</h2><div class="wireframe-button">Download CSV</div></div>
+                    <table class="wireframe-table">
+                        <thead><tr><th>ID</th><th>Nama Alat</th><th>Tipe</th><th>Lokasi</th><th>Aksi</th></tr></thead>
+                        <tbody><tr><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Edit] [Hapus]</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Halaman Manajemen Tanaman -->
+            <div class="wireframe-box mt-4">
+                <h1 class="text-3xl font-bold mb-4">Manajemen Tanaman</h1>
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Form Tambah/Edit Tanaman</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Jenis Jagung" class="wireframe-input">
+                        <input type="text" placeholder="Lokasi Lahan" class="wireframe-input">
+                        <input type="text" placeholder="Tanggal Tanam" class="wireframe-input">
+                    </div>
+                    <div class="flex justify-end space-x-2 mt-4"><div class="wireframe-button">Batal</div><div class="wireframe-button">Simpan</div></div>
+                </div>
+                <div class="wireframe-box">
+                    <div class="flex justify-between items-center mb-2"><h2 class="text-xl font-bold">Daftar Tanaman</h2><div class="wireframe-button">Download CSV</div></div>
+                    <table class="wireframe-table">
+                        <thead><tr><th>ID</th><th>Jenis</th><th>Lokasi</th><th>Tgl Tanam</th><th>Aksi</th></tr></thead>
+                        <tbody><tr><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Edit] [Hapus]</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Halaman Manajemen Penyiraman -->
+            <div class="wireframe-box mt-4">
+                <h1 class="text-3xl font-bold mb-4">Manajemen Penyiraman</h1>
+                <div class="wireframe-box">
+                    <h2 class="text-xl font-bold mb-2">Rekomendasi & Catat Penyiraman</h2>
+                    <div class="wireframe-box bg-gray-200">
+                        <h3 class="font-bold">Dapatkan Rekomendasi</h3>
+                        <div class="flex gap-4 items-end">
+                            <div class="flex-grow"><input type="text" placeholder="Pilih Lahan" class="wireframe-input"></div>
+                            <div><div class="wireframe-button">Cek</div></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mt-4">
+                        <input type="text" placeholder="Lahan yang disiram" class="wireframe-input">
+                        <input type="text" placeholder="Volume Air (Liter)" class="wireframe-input">
+                        <input type="text" placeholder="Durasi (Menit)" class="wireframe-input">
+                    </div>
+                    <div class="flex justify-end space-x-2 mt-4"><div class="wireframe-button">Batal</div><div class="wireframe-button">Simpan Riwayat</div></div>
+                </div>
+                <div class="wireframe-box">
+                    <div class="flex justify-between items-center mb-2"><h2 class="text-xl font-bold">Riwayat Penyiraman</h2><div class="wireframe-button">Download CSV</div></div>
+                    <table class="wireframe-table">
+                        <thead><tr><th>ID</th><th>Lokasi</th><th>Waktu</th><th>Volume</th><th>Aksi</th></tr></thead>
+                        <tbody><tr><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Data]</td><td>[Hapus]</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
